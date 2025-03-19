@@ -10164,3 +10164,15 @@ width: 75%;
 	margin-top: 8px;
 	font-family: 'ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif';
   }
+
+  /* 20250319Peacefactoryページ追記 */
+.container_1080 {
+	text-align: center;
+	line-height: 40px;
+   }
+   
+   .peacefactory__text01 {
+	font-size: 28px;
+   
+   }
+   
