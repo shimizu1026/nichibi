@@ -79,3 +79,48 @@ $(function () {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 全てのカルーセルコンテナを取得
+  const carousels = document.querySelectorAll('.image-carousel');
+  
+  // 各カルーセルに対して自動切り替え機能を設定
+  carousels.forEach(carousel => {
+	const images = carousel.querySelectorAll('.carousel-image');
+	let currentIndex = 0;
+	
+	// ランダムな初期待機時間（1000ms~5000ms）を設定
+	const initialDelay = Math.floor(Math.random() * 2000) + 1000;
+	
+	// 画像切り替え関数
+	const rotateImages = () => {
+	  // 次の画像インデックスを計算
+	  const nextIndex = (currentIndex + 1) % images.length;
+	  
+	  // 前の画像はactiveのまま
+	  // 次の画像を左から徐々に表示
+	  images[nextIndex].classList.remove('active');
+	  images[nextIndex].classList.add('next');
+	  
+	  // アニメーション完了後に状態を更新
+	  setTimeout(() => {
+		// 現在の画像のアクティブ状態を解除
+		images[currentIndex].classList.remove('active');
+		
+		// 次の画像をアクティブに設定
+		images[nextIndex].classList.remove('next');
+		images[nextIndex].classList.add('active');
+		
+		// 現在のインデックスを更新
+		currentIndex = nextIndex;
+		
+		// 次の切り替えをランダムな時間後（2000ms~6000ms）に設定
+		const nextDelay = Math.floor(Math.random() * 4000) + 2000;
+		setTimeout(rotateImages, nextDelay);
+	  }, 1200); // アニメーション時間
+	};
+	
+	// 初期遅延後に最初の切り替えを開始
+	setTimeout(rotateImages, initialDelay);
+  });
+});

@@ -9883,3 +9883,67 @@ width: 75%;
   max-width: 500px;
   width: 100%;
 }
+
+/* 20250319商品一覧追記 */
+.product-section {
+	/* display: flex;
+	flex-wrap: wrap; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	place-items: center;
+	gap: 94px;
+	/* justify-content: center; */
+  }
+  
+  .carousel-container {
+	position: relative;
+	margin: 0;
+  }
+  
+  .image-carousel {
+	position: relative;
+	width: 348px;
+	height: 348px;
+	overflow: hidden;
+  }
+  
+  .carousel-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: transform 0.8s ease, opacity 0.1s ease;
+	object-fit: cover;
+  }
+  
+  .carousel-image.active {
+	opacity: 1;
+	transform: translateX(0);
+	z-index: 1;
+  }
+  
+  .carousel-image.next {
+	opacity: 1;
+	transform: translateX(0);
+	z-index: 2;
+	clip-path: inset(0 100% 0 0);
+	animation: slide-in 1.2s forwards;
+  }
+  
+  @keyframes slide-in {
+	0% {
+	  clip-path: inset(0 100% 0 0);
+	}
+	100% {
+	  clip-path: inset(0 0 0 0);
+	}
+  }
+  
+  figcaption {
+	text-align: center;
+	margin-top: 8px;
+	font-family: 'ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif';
+  }
