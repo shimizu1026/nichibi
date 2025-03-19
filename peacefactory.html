@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="ja" class="no-js">
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <title>日美 NICHIBI</title>
+ <meta name="description" content="" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- facebook -->
+ <meta property="og:locale" content="ja_JP">
+ <meta property="og:title" content="" />
+ <meta property="og:type" content="website" />
+ <meta property="og:description" content="">
+ <!-- <meta property="og:image" content="./img/favicons/screenshot_ogp.png" />
+<meta property="og:site_name" content="" />
+<meta property="og:url" content="./" />
+<meta property="fb:app_id" content=""> -->
+ <!-- twitter -->
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:title" content="" />
+ <meta name="twitter:description" content="" />
+ <!-- <meta name="twitter:image" content="./img/favicons/screenshot_twitter.png" />
+<meta name="twitter:url" content="./">
+<meta name="twitter:site" content=""> -->
+ <!-- <link rel="canonical" href="./" /> -->
+ <!-- favicons -->
+ <!-- IE10以下用 -->
+ <link rel="shortcut icon" href="./img/favicons/favicon.ico">
+ <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+ <!-- <link rel="icon" href="./img/favicons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="./img/favicons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="./img/favicons/favicon-62.png" sizes="62x62" type="image/png"> -->
+ <!-- apple touch icon -->
+ <!-- <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png" /> -->
+ <link rel="stylesheet" href="./style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" onload="this.rel='stylesheet'">
+ <style>
+  .product-section {
+   /* display: flex;
+			  flex-wrap: wrap; */
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   place-items: center;
+   gap: 94px;
+   /* justify-content: center; */
+  }
+
+  .carousel-container {
+   position: relative;
+   margin: 0;
+  }
+
+  .image-carousel {
+   position: relative;
+   width: 348px;
+   height: 348px;
+   overflow: hidden;
+  }
+
+  .carousel-image {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transform: translateX(-100%);
+   transition: transform 0.8s ease, opacity 0.1s ease;
+   object-fit: cover;
+  }
+
+  .carousel-image.active {
+   opacity: 1;
+   transform: translateX(0);
+   z-index: 1;
+  }
+
+  .carousel-image.next {
+   opacity: 1;
+   transform: translateX(0);
+   z-index: 2;
+   clip-path: inset(0 100% 0 0);
+   animation: slide-in 1.2s forwards;
+  }
+
+  @keyframes slide-in {
+   0% {
+    clip-path: inset(0 100% 0 0);
+   }
+
+   100% {
+    clip-path: inset(0 0 0 0);
+   }
+  }
+
+  figcaption {
+   text-align: center;
+   margin-top: 8px;
+   font-family: 'ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif';
+  }
+ </style>
+
+</head>
+
+<body>
+ <header role="banner" class="header">
+  <div class="h-top flexbox flex-justify-between flex-align-center">
+   <div class="logo flexbox flex-align-center"><span>本質を見極めてデザインで解決する。株式会社 日美</span>
+   </div>
+   <div class="sns">
+    <div class="flexbox flex-align-center flex-justify-end">
+     <span>
+      <a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+     </span>
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="h-bottom flexbox flex-justify-between flex-align-center">
+   <div class="logo flexbox flex-align-center">
+    <h1><a href="index.html"><img src="img/common/logo01.png"></a></h1>
+   </div>
+   <ul class="link flexbox flex-align-center">
+    <li><a href="privacypolicy.html"><i class="fa fa-caret-right" aria-hidden="true"></i>プライバシーポリシー</a></li>
+    <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> お問い合わせ</a></li>
+   </ul>
+  </div>
+  <nav id="gnav" class="gnav collapse" role="navigation">
+   <ul class="flexbox flex-justify-between">
+    <li><a href="concept.html">コンセプト</a></li>
+    <li><a href="graphic.html">グラフィック</a></li>
+    <li><a href="it.html">ITソリューション</a></li>
+    <li><a href="about.html">日美について</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+   </ul>
+  </nav>
+  <button type="button" id="toggle" class="toggle" data-toggle="collapse" data-target="#gnav" aria-controls="gnav" aria-expanded="false">
+   <span class="toggle__bar"></span>
+   <span class="toggle__title"></span>
+  </button>
+ </header>
+ <main role="main" class="main">
+  <div class="breadcrumbs">
+   <div class="s-container">
+    <ol typeof="BreadcrumbList" vocab="http://schema.org/">
+     <!-- Breadcrumb NavXT 5.7.1 -->
+     <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="" href="index.html" class="home"><span property="name"><i class="fa fa-home" aria-hidden="true"></i></span></a>
+       <meta property="position" content="1">
+      </span>
+     </li>
+     <li class="current_item"><span property="itemListElement" typeof="ListItem"><span property="name">グラフィック</span>
+       <meta property="position" content="2">
+      </span>
+     </li>
+    </ol>
+   </div>
+  </div>
+  <div>
+   <div class="inner">
+    <h2 class="heading01"><img src="img/peacefactory/PF_logo.png"></h2>
+   </div>
+  </div>
+
+
+  <section class="top01">
+   <div class="container_1080">
+
+    <h3 class="graphic__text01">誰かの未来にピースを作ろう </h3>
+    <p>
+     私たちは当たり前のように「平和」の内側で生きてきました。<br>
+     でも、外側では未だに平和とは無縁の世界があり、常に不安定で緊張が絶えません。<br>
+     「平和」はただ受け取るばかりではなく、<br>
+     平和を自分たちでつくり、手渡していく時代になったのかもしれません。<br>
+     PeaceFactoryは、広島が作る、広島だから作れる平和とは何か、を考えていきます。<br>
+     「平和を作る」という言葉には、大きな力と責任が宿っています。<br>
+     それは個々人の行動や考え方が、世界の未来を変える可能性を持っていることを示しています。
+    </p>
+   </div>
+  </section>
+  <section class="top02">
+
+  </section>
+
+
+ </main>
+ <div class="f-contact flexbox flex-align-center flex-justify-end anniv-contact">
+  <div class="contact-txtbox">
+   <h2 class="heading01">
+    CONTACT
+    <span>お気軽にお問い合わせください</span>
+   </h2>
+  </div><!-- contact-txtbox -->
+  <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> メールでのお問い合わせ・資料請求</a>
+ </div>
+ <footer class="footer">
+  <div class="container flexbox flex-justify-between">
+   <h1><a href="index.html">
+     <img src="img/common/logo01.png">
+    </a></h1>
+   <div class="f-nav flexbox">
+    <ul>
+     <li><a href="concept.html">コンセプト</a></li>
+     <li><a href="graphic.html">グラフィック</a></li>
+     <li><a href="it.html">ITソリューション</a></li>
+     <li><a href="about.html">日美について</a></li>
+     <li><a href="company.html">会社概要</a></li>
+    </ul>
+    <ul>
+     <li><a href="performance.html">制作実績</a></li>
+     <li><a href="news-blog.html">ニュース</a></li>
+     <li><a href="news-blog.html">ブログ</a></li>
+    </ul>
+    <ul>
+     <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+   </div>
+  </div>
+  <small>Copyright © 2021 NICHIBI All Rights Reserved. </small>
+ </footer>
+ <script src="./js/libs/jquery.min.js"></script>
+ <script src="./js/libs/bootstrap.min.js"></script>
+ <script src="./js/libs/slick.min.js"></script>
+ <script src="./js/app.js"></script>
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+   // 全てのカルーセルコンテナを取得
+   const carousels = document.querySelectorAll('.image-carousel');
+
+   // 各カルーセルに対して自動切り替え機能を設定
+   carousels.forEach(carousel => {
+    const images = carousel.querySelectorAll('.carousel-image');
+    let currentIndex = 0;
+
+    // ランダムな初期待機時間（1000ms~5000ms）を設定
+    const initialDelay = Math.floor(Math.random() * 2000) + 1000;
+
+    // 画像切り替え関数
+    const rotateImages = () => {
+     // 次の画像インデックスを計算
+     const nextIndex = (currentIndex + 1) % images.length;
+
+     // 前の画像はactiveのまま
+     // 次の画像を左から徐々に表示
+     images[nextIndex].classList.remove('active');
+     images[nextIndex].classList.add('next');
+
+     // アニメーション完了後に状態を更新
+     setTimeout(() => {
+      // 現在の画像のアクティブ状態を解除
+      images[currentIndex].classList.remove('active');
+
+      // 次の画像をアクティブに設定
+      images[nextIndex].classList.remove('next');
+      images[nextIndex].classList.add('active');
+
+      // 現在のインデックスを更新
+      currentIndex = nextIndex;
+
+      // 次の切り替えをランダムな時間後（2000ms~6000ms）に設定
+      const nextDelay = Math.floor(Math.random() * 4000) + 2000;
+      setTimeout(rotateImages, nextDelay);
+     }, 1200); // アニメーション時間
+    };
+
+    // 初期遅延後に最初の切り替えを開始
+    setTimeout(rotateImages, initialDelay);
+   });
+  });
+ </script>
+</body>
+
+</html>
