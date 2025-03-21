@@ -10215,8 +10215,11 @@ figcaption {
 
 }
 
+.PF03_text {
+ text-align: center;
+}
 
-
+/* peacefactoryの思いアコーディオン部分 */
 .accordion-004 {
  max-width: 800px;
  margin-bottom: 7px;
@@ -10279,4 +10282,39 @@ figcaption {
 .PF02_inner {
  background-color: #F8F8F8;
  max-width: 800px;
+
+}
+
+/* peacefactoryの思いアコーディオン部分終わり */
+
+.PF03_container {
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ max-width: 950px;
+}
+
+.PF03_box {
+ width: 300px;
+ border: 1px solid #333;
+}
+
+.PF03_btn {
+ text-align: center;
+ margin: 0 auto;
+ border: 1px solid #333;
+ max-width: 416px;
+}
+
+.PF03_2_btn {
+ text-align: center;
+ background-color: #333;
+ margin: 0 auto;
+ border: 1px solid #333;
+ max-width: 416px;
+}
+
+.LP_btn {
+ color: #fff;
 }
