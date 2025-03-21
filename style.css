@@ -10205,6 +10205,15 @@ figcaption {
  margin: 0 auto;
 }
 
+.peacefactory__text02 {
+ font-size: 28px;
+ text-align: center;
+}
+
+.peacefactory__text02::after {
+ content: url(img/peacefactory/PF_border.png);
+
+}
 
 
 
