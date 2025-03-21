@@ -10220,6 +10220,10 @@ figcaption {
  text-align: center;
 }
 
+.peacefactory02 .inner {
+	display: flex;
+}
+
 /* peacefactoryの思いアコーディオン部分 */
 .accordion-004 {
  max-width: 800px;
@@ -10370,3 +10374,14 @@ figcaption {
   .voice_content::-webkit-scrollbar-thumb:hover {
 	background: #555;
   }
+
+.pf-banner {
+	max-width: 1200px;
+	width: 100%;
+	margin-inline: auto;
+	margin-top: 80px;
+}
+.pf-banner img {
+	max-width: 1200px;
+	width: 100%;
+}
