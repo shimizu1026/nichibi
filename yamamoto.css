@@ -1,8 +1,13 @@
 /* 見出しの装飾 */
+
+.inner {
+ text-align: center;
+}
+
 .peacefactory__text02 {
  position: relative;
  display: inline-block;
- margin-bottom: 1em;
+ margin-bottom: 67px;
 }
 
 .peacefactory__text02::after {
@@ -18,4 +23,48 @@
  background-color: black;
  border-radius: 2px;
 
+}
+
+/* PeaceFactoryの活動一覧のarticle */
+.article {
+ height: 120px;
+ max-width: 950px;
+ margin: 0 auto;
+ margin-bottom: 30px;
+ background-color: #fff;
+ display: flex;
+}
+
+.peacefactory04 {
+ background-color: #F3F3F3;
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.article_info {
+ margin: 30px;
+ text-align: left;
+}
+
+.article_info time {
+ font-size: 14px;
+ color: #797979;
+}
+
+.article_info p {
+ font-size: 16px;
+ font-weight: bold;
+}
+
+/* リンクボタン */
+.PF03_btn {
+ background-color: #fff;
+ padding: 15px;
+ font-size: 16px;
+}
+
+/* リンクボタンpiecefactry */
+.PF03_2_btn {
+ padding: 15px;
+ font-size: 16px;
 }
