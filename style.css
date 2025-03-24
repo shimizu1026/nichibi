@@ -10089,7 +10089,7 @@ A
 
 /*20241202追記　ヘッダー、フッターピースファクトリーロゴ*/
 .peacefactory img {
- height: 120px;
+ height: 15px;
 }
 
 
@@ -10381,6 +10381,7 @@ figcaption {
  text-align: center;
  background-color: #333;
  margin: 0 auto;
+ margin-bottom: 160px;
  border: 1px solid #333;
  max-width: 416px;
 }
