@@ -10227,11 +10227,16 @@ figcaption {
 	padding: 20px 0;
   }
 
+.peacefactory02 p {
+	font-size: 16px;
+	margin: 0;
+}
+
 .peacefactory02 .inner {
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
 }
 
@@ -10241,8 +10246,8 @@ figcaption {
     aspect-ratio: 368 / 477;
 	position: relative;
 	z-index: 2;
-	height: 477px; /* 固定の高さを設定 */
-	object-fit: contain; /* 画像のアスペクト比を保持 */
+	height: 100%; 
+	object-fit: cover;
 	flex-shrink: 0; /* 画像のサイズが縮小されないように */
 }
 
@@ -10251,11 +10256,14 @@ figcaption {
 	background-color: #F8F8F8;
 	max-width: 800px;
 	width: 100%;
-	padding: 80px 145px 80px 155px;
 	width: calc(100% - 298px); /* 368px - 70px = 298px (70pxの重なりを作る) */
-	margin-top: 105px; /* 105px下に配置 */
+	margin-top: 120px;
 	margin-left: -70px; /* これにより70px重なります */
 	z-index: 1;
+  }
+
+  .text_content {
+	padding: 100px 145px 100px 155px;
   }
 
   .peacefactory__text02 {
@@ -10278,69 +10286,31 @@ figcaption {
 	  margin: 0 auto;
 	}
   }
-  
 
-/* peacefactoryの思いアコーディオン部分 */
-.accordion-004 {
- max-width: 800px;
- margin-bottom: 7px;
- border: 2px solid #212121;
- border-radius: 5px;
+.button {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #333333;
+	font-size: 16px;
+	padding: 10px 0;
+	display: grid;
+	place-items: center;
 }
 
-.accordion-004 summary {
- display: flex;
- justify-content: space-between;
- align-items: center;
- position: relative;
- padding: 1em 2em;
- color: #333333;
- font-weight: 600;
- cursor: pointer;
+.button span {
+	display: block;
+    background-color: #333333;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    transition: all 0.4s ease;
 }
-
-.accordion-004 summary::-webkit-details-marker {
- display: none;
+.button .plus:nth-of-type(1) {
+	transform: translateX(15px);
 }
-
-.accordion-004 summary::before,
-.accordion-004 summary::after {
- width: 3px;
- height: .9em;
- border-radius: 5px;
- background-color: #333333b3;
- content: '';
+.button .plus:nth-of-type(2) {
+    transform: rotate(-90deg);
 }
-
-.accordion-004 summary::before {
- position: absolute;
- right: 2em;
- rotate: 90deg;
-}
-
-.accordion-004 summary::after {
- transition: rotate .3s;
-}
-
-.accordion-004[open] summary::after {
- rotate: 90deg;
-}
-
-.accordion-004 p {
- transform: translateY(-10px);
- opacity: 0;
- margin: 0;
- padding: .3em 2em 1.5em;
- color: #333333;
- transition: transform .5s, opacity .5s;
-}
-
-.accordion-004[open] p {
- transform: none;
- opacity: 1;
-}
-
-/* peacefactoryの思いアコーディオン部分終わり */
 
 .PF03_container {
  margin: 0 auto;
@@ -10348,6 +10318,7 @@ figcaption {
  flex-wrap: wrap;
  justify-content: space-between;
  max-width: 950px;
+
 }
 
 .PF03_box {
