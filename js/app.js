@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const button = document.querySelector('.button');
 	const hideTextContent = document.querySelector('.hide_text_content');
 	
-	// 初期状態の設定（display:noneではなく高さとopacityで制御）
+	// 初期状態の設定（高さとopacityで制御）
 	hideTextContent.style.maxHeight = '0';
 	hideTextContent.style.opacity = '0';
 	hideTextContent.style.overflow = 'hidden'; // コンテンツがはみ出ないように
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			hideTextContent.style.maxHeight = hideTextContent.scrollHeight + 'px';
 			hideTextContent.style.opacity = '1';
 		  });
-		}, 300); // 300ミリ秒の遅延
+		}, 200); // 遅延
 	  } else {
 		// コンテンツを非表示にする
 		hideTextContent.style.maxHeight = '0';
