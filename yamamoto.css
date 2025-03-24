@@ -1,0 +1,21 @@
+/* 見出しの装飾 */
+.peacefactory__text02 {
+ position: relative;
+ display: inline-block;
+ margin-bottom: 1em;
+}
+
+.peacefactory__text02::after {
+ content: '';
+ position: absolute;
+ bottom: -17px;
+ display: inline-block;
+ width: 58px;
+ height: 4px;
+ left: 50%;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+ background-color: black;
+ border-radius: 2px;
+
+}
