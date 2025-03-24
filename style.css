@@ -10450,22 +10450,24 @@ figcaption {
 }
 
 .voice_content dl {
- display: flex;
- gap: 50px;
  border-top: 1px solid #CDCDCD;
  font-size: 16px;
  line-height: 1.8;
- padding-top: 17px;
- padding-bottom: 17px;
  margin: 0;
 }
 
+.voice_content dl a {
+    display: flex;
+    gap: 50px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
 @media (max-width: 768px) {
-	.voice_content dl {
+	.voice_content dl a {
 		flex-direction: column;
 		gap: 10px;
 		text-align: left;
-		padding: 17px;
 	   }
 }
 
