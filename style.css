@@ -10216,6 +10216,8 @@ figcaption {
 
 }
 
+
+
 .PF03_text {
  text-align: center;
 }
@@ -10229,7 +10231,6 @@ figcaption {
 
 .peacefactory02 p {
 	font-size: 16px;
-
 }
 
 .peacefactory__text02 {
@@ -10270,12 +10271,24 @@ figcaption {
 	padding: 80px 145px 80px 155px;
   }
 
+@media (max-width: 768px) {
+	.text_content {
+		padding: 0;
+	}
+}
+
   .hide_text_content {
 	display: none;
 	overflow: hidden;
 	transition: 0.3s ease-out;
 	padding: 0 145px 70px;
   }
+
+  @media (max-width: 768px) {
+	.hide_text_content {
+		padding: 0;
+	  }
+}
 
   .mt40 {
 	margin-top: 40px;
@@ -10298,17 +10311,19 @@ figcaption {
   @media (max-width: 768px) {
 	.peacefactory02 .inner {
 	  flex-direction: column;
+	  background-color: #f8f8f8;
+	  padding: 40px;
 	}
 	
 	.PF02_inner {
 	  max-width: 100%;
+	  width: 100%;
 	  margin-left: 0;
-	  margin-top: 20px;
-	  padding: 40px 70px;
+	  margin-top: 0;
+	  padding: 40px 0 0;
 	}
-	
 	.peacefactory02 img {
-	  margin: 0 auto;
+	  margin: auto;
 	}
   }
 
