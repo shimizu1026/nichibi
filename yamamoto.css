@@ -1,5 +1,41 @@
-/* 見出しの装飾 */
+/* フォント */
+.peacefactory01 {
+ font-family: "Noto Sans JP";
+}
 
+.peacefactory02 {
+ font-family: "Noto Sans JP";
+}
+
+.peacefactory03 {
+ font-family: "Noto Sans JP";
+}
+
+.peacefactory04 {
+ font-family: "Noto Sans JP";
+}
+
+.peacefactory05 {
+ font-family: "Noto Sans JP";
+}
+
+.hide_text_inner .messege {
+ font-family: "Shippori Mincho";
+}
+
+/* TOP */
+.heading01 {
+ margin-top: 130px;
+ margin-bottom: 130px;
+}
+
+.container_top {
+ line-height: 40px;
+ font-size: 20px;
+ margin-bottom: 140px;
+}
+
+/* 見出しの装飾 */
 .inner {
  text-align: center;
 }
@@ -28,6 +64,16 @@
 
 }
 
+/* 文章　PeaceFactoryとは */
+.text_content p {
+ margin-top: 50px;
+ text-align: left;
+}
+
+.hide_text_inner {
+ text-align: left;
+}
+
 /* 見出し　PeaceFactoryとは */
 .peacefactory__text02 {
  position: relative;
@@ -53,6 +99,8 @@
 /* PeaceFactoryの事業内容 */
 .PF03_text {
  margin-bottom: 50px;
+ font-size: 16px;
+ line-height: 40px;
 }
 
 .PF03_container {

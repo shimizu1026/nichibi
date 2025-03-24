@@ -10196,6 +10196,7 @@ figcaption {
     font-weight: 500;
 }
 
+
 .peacefactory_wrapper h2 {
 	margin: 0;
 }
@@ -10213,7 +10214,7 @@ figcaption {
 }
 
 .container_1080 p {
-	font-size: 20px;
+	font-size: 20px
 }
 
 .inner {
@@ -10239,34 +10240,38 @@ figcaption {
 	padding-top: 100px;
   }
 
+
 .peacefactory02 p {
 	font-size: 16px;
+
 }
 
 .peacefactory__text02 {
-	margin: 0;	
+ margin: 0;
 }
 
 .peacefactory02 .inner {
-	position: relative;
-	display: flex;
-	justify-content: flex-end;
-	max-width: 1230px;
-	margin: 0 auto;
+ position: relative;
+ display: flex;
+ justify-content: flex-end;
+ max-width: 1230px;
+ margin: 0 auto;
 }
 
 .peacefactory02 .inner img {
-	width: 100%;
-    max-width: 368px;
-    aspect-ratio: 368 / 477;
-	position: relative;
-	z-index: 2;
-	height: 100%; 
-	object-fit: cover;
-	flex-shrink: 0; /* 画像のサイズが縮小されないように */
+ width: 100%;
+ max-width: 368px;
+ aspect-ratio: 368 / 477;
+ position: relative;
+ z-index: 2;
+ height: 100%;
+ object-fit: cover;
+ flex-shrink: 0;
+ /* 画像のサイズが縮小されないように */
 }
 
 .PF02_inner {
+
 	position: relative;
 	background-color: #F8F8F8;
 	max-width: 800px;
@@ -10347,17 +10352,18 @@ figcaption {
 	}
   }
 
+
 .button {
-	width: 100%;
-	background-color: #fff;
-	border: 1px solid #333333;
-	font-size: 16px;
-	padding: 10px 0;
-	display: grid;
-	place-items: center;
-	padding: 15px 30px;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
+ width: 100%;
+ background-color: #fff;
+ border: 1px solid #333333;
+ font-size: 16px;
+ padding: 10px 0;
+ display: grid;
+ place-items: center;
+ padding: 15px 30px;
+ cursor: pointer;
+ transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -10367,35 +10373,35 @@ figcaption {
 }
 
 .active {
-	background-color: #333;
-	color: #fff;
+ background-color: #333;
+ color: #fff;
 }
 
 .button:hover {
-	opacity: 0.4;
+ opacity: 0.4;
 }
 
 .button span {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+ display: flex;
+ align-items: center;
+ gap: 10px;
 }
 
 .button span::after {
-	display: block;
-	content: "";
-	background-image: url(img/peacefactory/plus.svg);
-	width: 25px;
-	height: 25px;
-	background-repeat: no-repeat;
+ display: block;
+ content: "";
+ background-image: url(img/peacefactory/plus.svg);
+ width: 25px;
+ height: 25px;
+ background-repeat: no-repeat;
 }
 
 .button span.open::after {
-	background-image: url(img/peacefactory/minus.svg);
-	background-repeat: no-repeat;
-	width: 25px;
-	height: 25px;
-  }
+ background-image: url(img/peacefactory/minus.svg);
+ background-repeat: no-repeat;
+ width: 25px;
+ height: 25px;
+}
 
 .PF03_container {
  margin: 0 auto;
@@ -10412,14 +10418,18 @@ figcaption {
 .PF03_btn {
  text-align: center;
  margin: 0 auto;
+ margin-top: 50px;
+ margin-bottom: 50px;
  border: 1px solid #333;
  max-width: 416px;
+
 }
 
 .PF03_2_btn {
  text-align: center;
  background-color: #333;
  margin: 0 auto;
+ margin-bottom: 160px;
  border: 1px solid #333;
  max-width: 416px;
 }
