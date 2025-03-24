@@ -124,3 +124,48 @@ document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(rotateImages, initialDelay);
   });
 });
+
+// peacefactoryページ「PeaceFactoryとは」のボタン開閉
+document.addEventListener('DOMContentLoaded', function() {
+	const button = document.querySelector('.button');
+	const hideTextContent = document.querySelector('.hide_text_content');
+	
+	// 初期状態の設定（display:noneではなく高さとopacityで制御）
+	hideTextContent.style.maxHeight = '0';
+	hideTextContent.style.opacity = '0';
+	hideTextContent.style.overflow = 'hidden'; // コンテンツがはみ出ないように
+	
+	button.addEventListener('click', function() {
+	  const buttonSpan = button.querySelector('span');
+	  
+	  if (hideTextContent.style.maxHeight === '0px' || hideTextContent.style.maxHeight === '') {
+		// まずボタンの見た目を変更
+		buttonSpan.textContent = '閉じる';
+		button.classList.add('active');
+		buttonSpan.classList.add('open'); 
+		
+		// 少し遅れてからコンテンツを表示する
+		setTimeout(function() {
+		  hideTextContent.style.display = 'block'; // まず表示させる
+		  
+		  // 次のフレームで高さとopacityを変更（これが重要）
+		  requestAnimationFrame(function() {
+			hideTextContent.style.maxHeight = hideTextContent.scrollHeight + 'px';
+			hideTextContent.style.opacity = '1';
+		  });
+		}, 300); // 300ミリ秒の遅延
+	  } else {
+		// コンテンツを非表示にする
+		hideTextContent.style.maxHeight = '0';
+		hideTextContent.style.opacity = '0';
+		
+		// トランジション終了後に完全に非表示にする
+		setTimeout(function() {
+		  hideTextContent.style.display = 'none';
+		  buttonSpan.textContent = 'PeaceFactoryの思い';
+		  buttonSpan.classList.remove('open'); 
+		  button.classList.remove('active');
+		}, 500); // トランジションの時間より長めに設定
+	  }
+	});
+  });
