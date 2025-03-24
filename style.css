@@ -10429,9 +10429,15 @@ h2 {
 }
 
 .PF05_info_inner {
- max-width: 920px;
+ max-width: 950px;
  margin-inline: auto;
  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+	.PF05_info_inner {
+		padding: 0 15px;
+	   }
 }
 
 .voice_content {
@@ -10452,6 +10458,15 @@ h2 {
  padding-top: 17px;
  padding-bottom: 17px;
  margin: 0;
+}
+
+@media (max-width: 768px) {
+	.voice_content dl {
+		flex-direction: column;
+		gap: 10px;
+		text-align: left;
+		padding: 17px;
+	   }
 }
 
 .voice_content dl:last-of-type {
@@ -10488,6 +10503,7 @@ h2 {
  width: 100%;
  margin-inline: auto;
  margin-top: 80px;
+ padding: 0 15px;
 }
 
 .pf-banner img {

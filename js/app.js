@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const button = document.querySelector('.button');
 	const hideTextContent = document.querySelector('.hide_text_content');
 	
-	// 初期状態の設定（display:noneではなく高さとopacityで制御）
+	// 初期状態の設定（高さとopacityで制御）
 	hideTextContent.style.maxHeight = '0';
 	hideTextContent.style.opacity = '0';
 	hideTextContent.style.overflow = 'hidden'; // コンテンツがはみ出ないように
