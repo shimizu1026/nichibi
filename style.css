@@ -10211,14 +10211,12 @@ figcaption {
  text-align: center;
 }
 
-.peacefactory__text02::after {
- content: url(img/peacefactory/PF_border.png);
 
-}
 
 .PF03_text {
  text-align: center;
 }
+
 
 .peacefactory02 {
 	position: relative;
@@ -10226,6 +10224,7 @@ figcaption {
 	margin: 0 auto;
 	padding: 20px 0;
   }
+
 
 .peacefactory02 p {
 	font-size: 16px;
@@ -10360,14 +10359,12 @@ figcaption {
  margin: 0 auto;
  display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
  max-width: 950px;
 
 }
 
 .PF03_box {
- width: 300px;
- border: 1px solid #333;
+ width: 255px;
 }
 
 .PF03_btn {
@@ -10390,63 +10387,68 @@ figcaption {
 }
 
 .PF05_info_inner {
-	max-width: 920px;
-	margin-inline: auto;
-	margin-top: 50px;
+ max-width: 920px;
+ margin-inline: auto;
+ margin-top: 50px;
 }
 
 .voice_content {
-	max-height: 300px; /* スクロール領域の高さを設定 */
-	overflow-y: scroll; /* 縦方向のスクロールを有効化 */
-	padding-right: 3px; /* スクロールバー用の余白 */
-  }
+ max-height: 300px;
+ /* スクロール領域の高さを設定 */
+ overflow-y: scroll;
+ /* 縦方向のスクロールを有効化 */
+ padding-right: 3px;
+ /* スクロールバー用の余白 */
+}
 
 .voice_content dl {
-	display: flex;
-	gap: 50px;
-	border-top: 1px solid #CDCDCD;
-	font-size: 16px;
-	line-height: 1.8;
-	padding-top: 17px;
-    padding-bottom: 17px;
-    margin: 0;
+ display: flex;
+ gap: 50px;
+ border-top: 1px solid #CDCDCD;
+ font-size: 16px;
+ line-height: 1.8;
+ padding-top: 17px;
+ padding-bottom: 17px;
+ margin: 0;
 }
 
 .voice_content dl:last-of-type {
-	border-bottom: 1px solid #CDCDCD;;
+ border-bottom: 1px solid #CDCDCD;
+ ;
 }
 
 .voice_content dt {
-	color: #797979;
+ color: #797979;
 }
 
 /* スクロールバーのデザインをカスタマイズ（オプション） */
 .voice_content::-webkit-scrollbar {
-	width: 12px;
-	height: 84px;
-  }
-  
-  .voice_content::-webkit-scrollbar-track {
-	background: #f1f1f1;
-	border-radius: 4px;
-  }
-  
-  .voice_content::-webkit-scrollbar-thumb {
-	background: #D9D9D9;
-	border-radius: 30px;
-  }
-  
-  .voice_content::-webkit-scrollbar-thumb:hover {
-	background: #555;
-  }
+ width: 12px;
+ height: 84px;
+}
+
+.voice_content::-webkit-scrollbar-track {
+ background: #f1f1f1;
+ border-radius: 4px;
+}
+
+.voice_content::-webkit-scrollbar-thumb {
+ background: #D9D9D9;
+ border-radius: 30px;
+}
+
+.voice_content::-webkit-scrollbar-thumb:hover {
+ background: #555;
+}
 
 .pf-banner {
-	max-width: 1200px;
-	width: 100%;
-	margin-inline: auto;
-	margin-top: 80px;
+ max-width: 1200px;
+ width: 100%;
+ margin-inline: auto;
+ margin-top: 80px;
 }
+
 .pf-banner img {
-	max-width: 1200px;
-	width: 100%;
+ max-width: 1200px;
+ width: 100%;
 }

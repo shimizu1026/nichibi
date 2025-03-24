@@ -1,0 +1,119 @@
+/* 見出しの装飾 */
+
+.inner {
+ text-align: center;
+}
+
+.peacefactory__text03 {
+ position: relative;
+ display: inline-block;
+ margin-top: 116px;
+ margin-bottom: 67px;
+ font-size: 28px;
+ text-align: center;
+}
+
+.peacefactory__text03::after {
+ content: '';
+ position: absolute;
+ bottom: -17px;
+ display: inline-block;
+ width: 58px;
+ height: 4px;
+ left: 50%;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+ background-color: black;
+ border-radius: 2px;
+
+}
+
+/* 見出し　PeaceFactoryとは */
+.peacefactory__text02 {
+ position: relative;
+ display: inline-block;
+ margin-bottom: 67px;
+}
+
+.peacefactory__text02::after {
+ content: '';
+ position: absolute;
+ bottom: -17px;
+ display: inline-block;
+ width: 58px;
+ height: 4px;
+ left: 50%;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+ background-color: black;
+ border-radius: 2px;
+
+}
+
+/* PeaceFactoryの事業内容 */
+.PF03_text {
+ margin-bottom: 50px;
+}
+
+.PF03_container {
+ text-align: center;
+ justify-content: center;
+}
+
+.PF03_box {
+ text-align: center;
+ margin: 30px;
+ max-width: 255px;
+
+}
+
+.PF03_box p {
+ font-size: 20px;
+ font-weight: bold;
+ height: 70px;
+}
+
+
+/* PeaceFactoryの活動一覧のarticle */
+.article {
+ height: 120px;
+ max-width: 950px;
+ margin: 0 auto;
+ margin-bottom: 30px;
+ background-color: #fff;
+ display: flex;
+}
+
+.peacefactory04 {
+ background-color: #F3F3F3;
+ padding-bottom: 100px;
+}
+
+.article_info {
+ margin: 30px;
+ text-align: left;
+}
+
+.article_info time {
+ font-size: 14px;
+ color: #797979;
+}
+
+.article_info p {
+ font-size: 16px;
+ font-weight: bold;
+}
+
+/* リンクボタン */
+.PF03_btn {
+ background-color: #fff;
+ padding: 15px;
+ font-size: 16px;
+ margin-top: 50px;
+}
+
+/* リンクボタンpiecefactry */
+.PF03_2_btn {
+ padding: 15px;
+ font-size: 16px;
+}
