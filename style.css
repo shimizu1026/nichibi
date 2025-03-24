@@ -10229,7 +10229,11 @@ figcaption {
 
 .peacefactory02 p {
 	font-size: 16px;
-	margin: 0;
+
+}
+
+.peacefactory__text02 {
+	margin: 0;	
 }
 
 .peacefactory02 .inner {
@@ -10263,7 +10267,28 @@ figcaption {
   }
 
   .text_content {
-	padding: 100px 145px 100px 155px;
+	padding: 80px 145px 80px 155px;
+  }
+
+  .hide_text_content {
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	padding: 0 145px 70px;
+  }
+
+  .mt40 {
+	margin-top: 40px;
+  }
+
+  .mt60 {
+	margin-top: 60px;
+  }
+
+  .messege {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: block;
   }
 
   .peacefactory__text02 {
@@ -10295,22 +10320,35 @@ figcaption {
 	padding: 10px 0;
 	display: grid;
 	place-items: center;
+	padding: 15px 30px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	opacity: 0.4;
 }
 
 .button span {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.button span::after {
 	display: block;
-    background-color: #333333;
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    transition: all 0.4s ease;
+	content: "";
+	background-image: url(img/peacefactory/plus.svg);
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
 }
-.button .plus:nth-of-type(1) {
-	transform: translateX(15px);
-}
-.button .plus:nth-of-type(2) {
-    transform: rotate(-90deg);
-}
+
+.button span.open::after {
+	background-image: url(img/peacefactory/minus.svg);
+	width: 25px;
+	height: 25px;
+  }
 
 .PF03_container {
  margin: 0 auto;

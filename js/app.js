@@ -124,3 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(rotateImages, initialDelay);
   });
 });
+
+// peacefactoryページPeaceFactoryとはのボタン開閉
