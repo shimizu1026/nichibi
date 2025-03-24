@@ -10273,7 +10273,7 @@ figcaption {
   .hide_text_content {
 	display: none;
 	overflow: hidden;
-	transition: max-height 0.3s ease-out;
+	transition: 0.3s ease-out;
 	padding: 0 145px 70px;
   }
 
@@ -10325,6 +10325,11 @@ figcaption {
 	transition: all 0.3s ease-in-out;
 }
 
+.active {
+	background-color: #333;
+	color: #fff;
+}
+
 .button:hover {
 	opacity: 0.4;
 }
@@ -10346,6 +10351,7 @@ figcaption {
 
 .button span.open::after {
 	background-image: url(img/peacefactory/minus.svg);
+	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
   }
