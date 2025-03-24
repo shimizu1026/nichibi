@@ -10191,30 +10191,32 @@ figcaption {
 
 /* 20250319Peacefactoryページ追記 */
 .peacefactory_wrapper {
-	margin-top: 100px;
-	font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-weight: 500;
+ margin-top: 100px;
+ font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ font-weight: 500;
 }
 
 
 .peacefactory_wrapper h2 {
-	margin: 0;
+ margin: 0;
 }
+
 .container_1080 {
  text-align: center;
  line-height: 40px;
 }
 
 .peacefactory01 {
-	padding-top: 100px;
+ padding-top: 100px;
 }
+
 .peacefactory__text01 {
  font-size: 28px;
  font-family: 'Shippori Mincho', "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .container_1080 p {
-	font-size: 20px
+ font-size: 20px
 }
 
 .inner {
@@ -10234,15 +10236,15 @@ figcaption {
 
 
 .peacefactory02 {
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	padding-top: 100px;
-  }
+ position: relative;
+ width: 100%;
+ margin: 0 auto;
+ padding-top: 100px;
+}
 
 
 .peacefactory02 p {
-	font-size: 16px;
+ font-size: 16px;
 
 }
 
@@ -10272,85 +10274,89 @@ figcaption {
 
 .PF02_inner {
 
-	position: relative;
-	background-color: #F8F8F8;
-	max-width: 800px;
-	width: 100%;
-	width: calc(100% - 298px); /* 368px - 70px = 298px (70pxの重なりを作る) */
-	margin-top: 120px;
-	margin-left: -70px; /* これにより70px重なります */
-	z-index: 1;
-  }
+ position: relative;
+ background-color: #F8F8F8;
+ max-width: 800px;
+ width: 100%;
+ width: calc(100% - 298px);
+ /* 368px - 70px = 298px (70pxの重なりを作る) */
+ margin-top: 120px;
+ margin-left: -70px;
+ /* これにより70px重なります */
+ z-index: 1;
+}
 
-  .text_content {
-	padding: 70px 145px 70px 155px;
-  }
+.text_content {
+ padding: 70px 145px 70px 155px;
+}
 
 @media (max-width: 768px) {
-	.text_content {
-		padding: 0;
-	}
+ .text_content {
+  padding: 0;
+ }
 }
 
 .text_content p {
-	padding-top: 50px;
-	margin-bottom: 0;
-  }
-
-  .hide_text_content {
-	display: none;
-	overflow: hidden;
-	transition: 0.3s ease-out;
-	padding: 0 145px 70px;
-  }
-
-  @media (max-width: 768px) {
-	.hide_text_content {
-		padding: 0;
-	  }
+ padding-top: 50px;
+ margin-bottom: 0;
 }
 
-  .mt40 {
-	margin-top: 40px;
-  }
+.hide_text_content {
+ display: none;
+ overflow: hidden;
+ transition: 0.3s ease-out;
+ padding: 0 145px 70px;
+}
 
-  .mt60 {
-	margin-top: 60px;
-  }
+@media (max-width: 768px) {
+ .hide_text_content {
+  padding: 0;
+ }
+}
 
-  .bold {
-	font-weight: 600;
-  }
+.mt40 {
+ margin-top: 40px;
+}
 
-  .messege {
-	font-family: 'Shippori Mincho', "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	display: block;
-  }
+.mt60 {
+ margin-top: 60px;
+}
 
-  .peacefactory__text02 {
-	margin: 0;
-	margin-bottom: 20px;
-  }
-  @media (max-width: 768px) {
-	.peacefactory02 .inner {
-	  flex-direction: column;
-	  background-color: #f8f8f8;
-	  padding: 40px;
-	}
-	
-	.PF02_inner {
-	  max-width: 100%;
-	  width: 100%;
-	  margin-left: 0;
-	  margin-top: 0;
-	  padding: 40px 0 0;
-	}
-	.peacefactory02 img {
-	  margin: auto;
-	}
-  }
+.bold {
+ font-weight: 600;
+}
+
+.messege {
+ font-family: 'Shippori Mincho', "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ margin-top: 60px;
+ margin-bottom: 60px;
+ display: block;
+}
+
+.peacefactory__text02 {
+ margin: 0;
+ margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+ .peacefactory02 .inner {
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 40px;
+ }
+
+ .PF02_inner {
+  max-width: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 40px 0 0;
+ }
+
+ .peacefactory02 img {
+  margin: auto;
+ }
+}
 
 
 .button {
@@ -10367,9 +10373,9 @@ figcaption {
 }
 
 @media (max-width: 768px) {
-	.button {
-		margin-top: 20px;
-	}
+ .button {
+  margin-top: 20px;
+ }
 }
 
 .active {
@@ -10445,9 +10451,9 @@ figcaption {
 }
 
 @media (max-width: 768px) {
-	.PF05_info_inner {
-		padding: 0 15px;
-	   }
+ .PF05_info_inner {
+  padding: 0 15px;
+ }
 }
 
 .voice_content {
@@ -10467,18 +10473,18 @@ figcaption {
 }
 
 .voice_content dl a {
-    display: flex;
-    gap: 50px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+ display: flex;
+ gap: 50px;
+ padding-top: 17px;
+ padding-bottom: 17px;
 }
 
 @media (max-width: 768px) {
-	.voice_content dl a {
-		flex-direction: column;
-		gap: 10px;
-		text-align: left;
-	   }
+ .voice_content dl a {
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+ }
 }
 
 .voice_content dl:last-of-type {
