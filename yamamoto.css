@@ -135,8 +135,17 @@
  margin-top: 50px;
 }
 
+.PF03_btn::after {
+ content: url(img/peacefactory/arrow.png);
+
+}
+
 /* リンクボタンpiecefactry */
 .PF03_2_btn {
  padding: 15px;
  font-size: 16px;
+}
+
+.PF03_2_btn::after {
+ content: url(img/peacefactory/arrow02.png);
 }
