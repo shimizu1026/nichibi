@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			hideTextContent.style.maxHeight = hideTextContent.scrollHeight + 'px';
 			hideTextContent.style.opacity = '1';
 		  });
-		}, 300); // 200ミリ秒の遅延
+		}, 300); // 300ミリ秒の遅延
 	  } else {
 		// コンテンツを非表示にする
 		hideTextContent.style.maxHeight = '0';
