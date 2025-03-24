@@ -10190,13 +10190,13 @@ figcaption {
 }
 
 /* 20250319Peacefactoryページ追記 */
-.peacefactory {
+.peacefactory_wrapper {
 	margin-top: 100px;
 	font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: 500;
 }
 
-.peacefactory h2 {
+.peacefactory_wrapper h2 {
 	margin: 0;
 }
 .container_1080 {
