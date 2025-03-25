@@ -10424,8 +10424,6 @@ figcaption {
 .PF03_btn {
  text-align: center;
  margin: 0 auto;
- margin-top: 50px;
- margin-bottom: 50px;
  border: 1px solid #333;
  max-width: 416px;
 
@@ -10435,7 +10433,6 @@ figcaption {
  text-align: center;
  background-color: #333;
  margin: 0 auto;
- margin-bottom: 160px;
  border: 1px solid #333;
  max-width: 416px;
 }

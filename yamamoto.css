@@ -1,9 +1,23 @@
 /* TOP */
-
 .container_top {
  line-height: 40px;
  font-size: 20px;
  margin-bottom: 0px;
+}
+
+.peacefactory03 {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.peacefactory04 {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.peacefactory05 {
+ padding-top: 100px;
+ padding-bottom: 100px;
 }
 
 /* 見出しの装飾 */
@@ -14,7 +28,6 @@
 .peacefactory__text03 {
  position: relative;
  display: inline-block;
- margin-top: 116px;
  margin-bottom: 67px;
  font-size: 28px;
  text-align: center;
@@ -144,4 +157,8 @@
 
 .PF03_2_btn::after {
  content: url(img/peacefactory/arrow02.png);
+}
+
+.PF03_2_btn :hover {
+ color: #F3F3F3;
 }
