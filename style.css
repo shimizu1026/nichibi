@@ -10297,7 +10297,7 @@ figcaption {
 }
 
 .text_content p {
- padding-top: 50px;
+ /* padding-top: 50px; */
  margin-bottom: 0;
 }
 
