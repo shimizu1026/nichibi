@@ -110,7 +110,6 @@
 
 /* PeaceFactoryの活動一覧のarticle */
 .article {
- height: 120px;
  max-width: 950px;
  margin: 0 auto;
  margin-bottom: 30px;
@@ -124,7 +123,10 @@
 }
 
 .article_info {
- margin: 30px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 30px;
+ margin-right: 30px;
  text-align: left;
 }
 
@@ -140,10 +142,42 @@
 
 /* リンクボタン */
 .PF03_btn {
+ text-align: center;
+ margin: 0 auto;
+ border: 1px solid #333;
+ max-width: 416px;
+ height: 60px;
+ margin-right: 30px;
+ margin-left: 30px;
+}
+
+.PF03_2_btn {
+ text-align: center;
+ background-color: #333;
+ margin: 0 auto;
+ border: 1px solid #333;
+ max-width: 416px;
+ height: 60px;
+ margin-right: 30px;
+ margin-left: 30px;
+}
+
+.PF03_btn_wrap {
+ display: flex;
+ flex-flow: column;
+ border: solid;
+ max-width: 416px;
+ margin: 0 auto;
+}
+
+
+
+/* リンクボタン白地 */
+.PF03_btn {
  background-color: #fff;
  padding: 15px;
  font-size: 16px;
- margin-top: 50px;
+
 }
 
 .PF03_btn::after {

@@ -10418,24 +10418,11 @@ figcaption {
 }
 
 .PF03_box {
- width: 255px;
-}
-
-.PF03_btn {
- text-align: center;
- margin: 0 auto;
- border: 1px solid #333;
- max-width: 416px;
+ max-width: 256px;
 
 }
 
-.PF03_2_btn {
- text-align: center;
- background-color: #333;
- margin: 0 auto;
- border: 1px solid #333;
- max-width: 416px;
-}
+
 
 .LP_btn {
  color: #fff;
