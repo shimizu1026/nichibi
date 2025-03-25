@@ -208,10 +208,3 @@
 .LP_btn :hover {
  color: #fff;
 }
-
-@media (max-width: 768px) {
- .PF03_text {
-  line-height: auto;
- }
-
-}
