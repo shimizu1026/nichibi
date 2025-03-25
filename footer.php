@@ -1,8 +1,8 @@
 <div class="pf-banner">
-	<a href="peacefactory.html">
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>peace-factory">
 		<picture>
-			<source srcset="img/peacefactory/pf-banner.jpg" media="(min-width: 640px)">
-			<img src="img/peacefactory/pf-banner-sp.jpg" alt="PeaceFactory 社会貢献を目的とした新しい事業です" width="1200" height="160" decoding="async" loading="lazy"></picture></a></div>
+			<source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/img/common/pf-banner.jpg" media="(min-width: 640px)">
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/common/pf-banner-sp.jpg" alt="PeaceFactory 社会貢献を目的とした新しい事業です" width="1200" height="160" decoding="async" loading="lazy"></picture></a></div>
 <div class="f-contact flexbox flex-align-center flex-justify-end anniv-contact">
     <div class="contact-txtbox">
         <h2 class="heading01">
@@ -26,7 +26,7 @@ contact"><i class="fa fa-envelope" aria-hidden="true"></i> メールでのお問
                 </br></br>【東京営業所】</br>〒111-0053　東京都台東区浅草橋3-1-8アダックスビル4F</br>TEL：<a href="tel:0356878911">03-5687-8911</a></br></br>
                 <ul class="footer_icons">
                     <li class="instagram"><a href="https://www.instagram.com/nichibi.official/?hl=ja" target="_blank" classinstagram><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                    <li class="peacefactory"><a href="https://www.peace-factory.net/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/common/peacefactory_logo.svg" alt=""></a></li>
+                    <li class="peacefactory"><a href="<?php echo esc_url( home_url( '/' ) ); ?>peace-factory"><img src="<?php echo get_template_directory_uri(); ?>/img/common/peacefactory_logo.svg" alt=""></a></li>
                 </ul>
             </p>
         </div>
