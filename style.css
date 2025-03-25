@@ -10194,12 +10194,16 @@ figcaption {
  margin-top: 100px;
  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
  font-weight: 400;
+ font-feature-settings: "palt";
+ letter-spacing: 0.05em;
 }
 
 
-.peacefactory_wrapper h2 {
+/* .peacefactory_wrapper h2 {
+ width: 100%;
+ text-align: center;
  margin: 0;
-}
+} */
 
 .container_1080 {
  text-align: center;
@@ -10207,7 +10211,11 @@ figcaption {
 }
 
 .peacefactory01 {
- padding-top: 100px;
+	text-align: center;
+}
+.peacefactory01 h2 {
+	margin-top: 0;
+	margin-bottom: 100px;
 }
 
 .peacefactory__text01 {
@@ -10222,6 +10230,7 @@ figcaption {
 .inner {
  max-width: 1230px;
  margin: 0 auto;
+ padding: 0 40px;
 }
 
 .peacefactory__text02 {
@@ -10312,9 +10321,21 @@ figcaption {
  margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+	.mt40 {
+		margin-top: 0;
+	   }
+	}
+
 .mt60 {
  margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+	.mt60 {
+		margin-top: 0;
+	   }
+	}
 
 .bold {
  font-weight: 600;
@@ -10323,12 +10344,16 @@ figcaption {
 .messege {
  font-family: 'Shippori Mincho', "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
  margin-top: 60px;
- margin-bottom: 60px;
  display: block;
 }
 
+@media (max-width: 768px) {
+	.messege {
+		margin-top: 0;
+	   }
+	}
+
 .peacefactory__text02 {
- margin: 0;
  margin-bottom: 20px;
 }
 
@@ -10428,11 +10453,11 @@ figcaption {
  margin-top: 50px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
  .PF05_info_inner {
   padding: 0 15px;
  }
-}
+} */
 
 .voice_content {
  max-height: 250px;

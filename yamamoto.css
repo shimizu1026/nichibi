@@ -25,11 +25,11 @@
 }
 
 /* 見出しの装飾 */
-.inner {
+/* .inner {
  text-align: center;
  padding-left: 40px;
  padding-right: 40px;
-}
+} */
 
 .peacefactory__text03 {
  position: relative;
@@ -38,6 +38,7 @@
  margin-bottom: 67px;
  font-size: 28px;
  text-align: center;
+ width: 100%;
 }
 
 .peacefactory__text03::after {
@@ -152,24 +153,16 @@
 
 /* リンクボタン */
 .PF03_btn {
- text-align: center;
  margin: 0 auto;
- border: 1px solid #333;
  max-width: 416px;
  width: 100%;
- height: 60px;
-
 }
 
 .PF03_2_btn {
- text-align: center;
- background-color: #333;
  margin: 0 auto;
  border: 1px solid #333;
  max-width: 416px;
  width: 100%;
- height: 60px;
-
 }
 
 .PF03_btn_wrap {
@@ -183,34 +176,59 @@
 
 
 /* リンクボタン白地 */
-.PF03_btn {
+.PF03_btn a {
  background-color: #fff;
- padding: 15px;
+ display: grid;
+ grid-template-columns: 1fr auto;
+ place-items: center;
+ border: 1px solid #333;
  font-size: 16px;
- position: relative;
+ width: 100%;
 }
 
-.PF03_btn::after {
- content: url(img/peacefactory/arrow.png);
- position: absolute;
- right: 10%;
+.PF03_btn a::after {
+	content: "";
+	background-image: url(img/peacefactory/arrow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	justify-self: end;
+	width: 17px;
+	height: 7px
+}
 
+.PF03_btn a,
+.PF03_2_btn a {
+	padding: 15px 30px;
 }
 
 /* リンクボタンpiecefactry */
-.PF03_2_btn {
- padding: 15px;
- font-size: 16px;
- position: relative;
+.PF03_2_btn a {
+ display: grid;
+	grid-template-columns: 1fr auto;
+	place-items: center;
+	background-color: #231815;
+	font-size: 16px;
+	width: 100%;
 }
 
-.PF03_2_btn::after {
- content: url(img/peacefactory/arrow02.png);
- position: absolute;
- right: 10%;
+@media (max-width: 500px) {
+	.PF03_btn a,
+	.PF03_2_btn a {
+		font-size: 14px;
+	   }
 }
 
-.LP_btn :hover {
+.PF03_2_btn a::after {
+ content: "";
+ background-image: url(img/peacefactory/arrow02.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ justify-self: end;
+ width: 17px;
+ height: 7px;
+}
+
+.LP_btn:hover {
  color: #fff;
 }
 
