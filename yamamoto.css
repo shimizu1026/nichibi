@@ -34,6 +34,7 @@
 .peacefactory__text03 {
  position: relative;
  display: inline-block;
+ margin-top: 0;
  margin-bottom: 67px;
  font-size: 28px;
  text-align: center;
@@ -170,6 +171,8 @@
  display: grid;
  gap: 50px;
  margin-top: 50px;
+ padding-left: 30px;
+ padding-right: 30px;
 }
 
 
@@ -179,11 +182,13 @@
  background-color: #fff;
  padding: 15px;
  font-size: 16px;
-
+ position: relative;
 }
 
 .PF03_btn::after {
  content: url(img/peacefactory/arrow.png);
+ position: absolute;
+ right: 10%;
 
 }
 
@@ -191,12 +196,22 @@
 .PF03_2_btn {
  padding: 15px;
  font-size: 16px;
+ position: relative;
 }
 
 .PF03_2_btn::after {
  content: url(img/peacefactory/arrow02.png);
+ position: absolute;
+ right: 10%;
 }
 
-.PF03_2_btn :hover {
- color: #F3F3F3;
+.LP_btn :hover {
+ color: #fff;
+}
+
+@media (max-width: 768px) {
+ .PF03_text {
+  line-height: auto;
+ }
+
 }
