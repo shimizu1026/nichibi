@@ -233,4 +233,19 @@
  .PF03_text br {
   display: none;
  }
+
+ .article {
+  flex-wrap: wrap;
+
+ }
+
+ .article_img img {
+  width: 100%;
+  height: auto;
+ }
+
+ .article_img {
+  width: 100%;
+  height: auto;
+ }
 }
