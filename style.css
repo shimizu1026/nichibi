@@ -10457,7 +10457,7 @@ figcaption {
 }
 
 .voice_content {
- max-height: 300px;
+ max-height: 250px;
  /* スクロール領域の高さを設定 */
  overflow-y: scroll;
  /* 縦方向のスクロールを有効化 */
@@ -10465,14 +10465,14 @@ figcaption {
  /* スクロールバー用の余白 */
 }
 
-.voice_content dl {
+.voice_content ul li {
  border-top: 1px solid #CDCDCD;
  font-size: 16px;
  line-height: 1.8;
  margin: 0;
 }
 
-.voice_content dl a {
+.voice_content ul li a {
  display: flex;
  gap: 50px;
  padding-top: 17px;
@@ -10480,19 +10480,18 @@ figcaption {
 }
 
 @media (max-width: 768px) {
- .voice_content dl a {
+ .voice_content ul li a {
   flex-direction: column;
   gap: 10px;
   text-align: left;
  }
 }
 
-.voice_content dl:last-of-type {
+.voice_content ul:last-of-type {
  border-bottom: 1px solid #CDCDCD;
- ;
 }
 
-.voice_content dt {
+.voice_content li {
  color: #797979;
 }
 
