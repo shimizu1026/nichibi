@@ -23,6 +23,8 @@
 /* 見出しの装飾 */
 .inner {
  text-align: center;
+ padding-left: 40px;
+ padding-right: 40px;
 }
 
 .peacefactory__text03 {
