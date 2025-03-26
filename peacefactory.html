@@ -337,6 +337,61 @@
         <li><a href=""><time datetime="2025-03-19">2025/03/19</time>＃＃のご意見を改善しました</a></li>
        </ul>
       </div>
+	  <p>項目をご記入のうえ、お問い合わせください。<br>
+		担当者よりご連絡いたします。</p>
+	  <form action="" method="post" class="form">
+		<div class="form_inner">
+			<label>
+				お名前
+				<input type="text" name="name" required>
+			</label>
+			<label>
+				メールアドレス
+				<input type="email" name="email" required>
+			</label>
+			<label>
+				電話番号
+				<input type="tel" name="tel">
+			</label>
+			<label>
+				お問い合わせ種別
+				<select name="category">
+					<option value="">選択してください</option>
+					<option value="product">商品について</option>
+					<option value="system">寄付システムについて</option>
+					<option value="other">その他</option>
+				</select>
+			</label>
+			<textarea name="textarea"></textarea>
+			<!-- /# -->
+			<label>
+				年齢
+				<input type="text" name="text">
+			</label>
+			<label>
+				性別
+				<select name="gender">
+					<option value="">選択して下さい</option>
+					<option value="male">男性</option>
+					<option value="female">女性</option>
+					<option value="not_answer">回答しない</option>
+				</select>
+			</label>
+			<label>
+				職業
+				<input type="text" name="text">
+			</label>
+			<label>画像・動画の添付
+			<input type="file" id="attachment" name="attachment" accept="image/*,video/*">
+			</label>
+				<label>
+					<input type="checkbox" name="privacy_consent" required>
+					<a href="privacypolicy.html" target="_blank">プライバシーポリシーに</a>同意する
+				</label>
+			<button type="submit" class="submit-btn">送信</button>
+		</div>
+		<!-- /.form_inner -->
+	  </form>
      </div>
     </div>
    </section>

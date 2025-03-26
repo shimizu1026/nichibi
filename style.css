@@ -10531,3 +10531,72 @@ figcaption {
  max-width: 1200px;
  width: 100%;
 }
+
+/* フォーム */
+.form {
+	padding: 40px;
+    border-radius: 25px;
+	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
+	margin-top: 80px;
+}
+.form_inner {
+	display: grid;
+	gap: 24px;
+}
+.form_inner label {
+    display: flex;
+    flex-direction: column;
+}
+.form_inner label:last-of-type {
+    display: block;
+}
+input[type="text"], 
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="file"],
+        select, 
+        textarea
+ {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 1px solid #CDCDCD;
+	border-radius: 4px;
+}
+input[type="text"], 
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="file"],
+        select, 
+        textarea{
+	width: 100%;
+}
+textarea {
+	height: 150px;
+	resize: vertical;
+}
+.submit-btn {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.submit-btn:hover {
+	background-color: #0056b3;
+}
+.rating {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.rating label {
+	display: inline-block;
+	margin-right: 10px;
+}
+.privacy-policy {
+	margin-top: 15px;
+	font-size: 0.9em;
+}
