@@ -304,8 +304,7 @@ document.querySelectorAll('.float-up').forEach(item => {
 
 document.querySelectorAll('.slide-in-left');
 // 左側の要素のアニメーション
-gsap.utils.toArray('.left-item').forEach(item => {
-	gsap.fromTo(item, 
+	gsap.fromTo('.left-item', 
 		{
 			opacity: 0,
 			x: -100  // 左から100px外側から開始
@@ -316,16 +315,14 @@ gsap.utils.toArray('.left-item').forEach(item => {
 			duration: 1,
 			ease: 'power2.out',
 			scrollTrigger: {
-				trigger: item,
+				trigger: '.left-item',
 				start: 'top 80%',  // 要素の上部が画面の80%の位置に来たら
 				toggleActions: 'play none none reverse'
 			}
 		}
 	);
-});
  // 右側の要素のアニメーション
- gsap.utils.toArray('.right-item').forEach(item => {
-	gsap.fromTo(item, 
+	gsap.fromTo('.right-item', 
 		{
 			opacity: 0,
 			x: 100  // 右から100px外側から開始
@@ -336,13 +333,12 @@ gsap.utils.toArray('.left-item').forEach(item => {
 			duration: 1,
 			ease: 'power2.out',
 			scrollTrigger: {
-				trigger: item,
+				trigger: '.right-item',
 				start: 'top 80%',  // 要素の上部が画面の80%の位置に来たら
 				toggleActions: 'play none none reverse'
 			}
 		}
 	);
 });
-   });
   
 
