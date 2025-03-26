@@ -149,4 +149,10 @@
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>graphic/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/common/category04.jpg"><span>グラフィック</span></a></li>
   </ul>
 </div>
+<div class="pf-banner">
+  <a href="/peacefactory">
+   <picture>
+    <source srcset="img/peacefactory/pf-banner.jpg" media="(min-width: 640px)">
+    <img src="img/peacefactory/pf-banner-sp.jpg" alt="PeaceFactory 社会貢献を目的とした新しい事業です" width="1200" height="160" decoding="async" loading="lazy"></picture>
+  </a></div>
 <?php get_footer(); ?>
