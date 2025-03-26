@@ -10533,19 +10533,48 @@ figcaption {
 }
 
 /* フォーム */
-.form {
-	padding: 40px;
+.contact_form {
+	margin-top: 80px;	
+}
+.contact_form h4 {
+	font-size: 20px;
+	text-align: center;	
+}
+.contact_form p {
+	font-size: 16px;	
+}
+.mw_wp_form {
+	padding: 60px;
     border-radius: 25px;
 	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
-	margin-top: 80px;
+	margin-top: 30px;
 }
+@media (max-width: 768px) {
+	.mw_wp_form {
+		padding: 25px 15px;
+	}
+}
+
 .form_inner {
 	display: grid;
-	gap: 24px;
+	gap: 30px;
+	font-size: 16px;
 }
-.form_inner label {
+
+.form_note {
+	color: red;
+	margin-bottom: 15px;
+}
+.form_inner .form_group {
     display: flex;
     flex-direction: column;
+}
+.form_inner .required::after {
+    content: '＊';
+    color: red;
+    margin-left: 4px;
+    vertical-align: super;
+    font-size: 0.7em;
 }
 .form_inner label:last-of-type {
     display: block;
@@ -10554,21 +10583,15 @@ input[type="text"],
         input[type="email"], 
         input[type="tel"], 
         input[type="file"],
-        select, 
-        textarea
- {
-	width: 100%;
-	height: auto;
+        select {
+	width: 40%;
+	height: 100%;
 	padding: 10px;
 	border: 1px solid #CDCDCD;
 	border-radius: 4px;
+	margin-top: 4px;
 }
-input[type="text"], 
-        input[type="email"], 
-        input[type="tel"], 
-        input[type="file"],
-        select, 
-        textarea{
+textarea{
 	width: 100%;
 }
 textarea {
@@ -10576,16 +10599,19 @@ textarea {
 	resize: vertical;
 }
 .submit-btn {
+	width: 35%;
 	background-color: #333;
 	color: #fff;
 	border: none;
-	padding: 12px 20px;
-	border-radius: 4px;
+	padding: 15px 30px;
 	cursor: pointer;
 	font-size: 16px;
+	margin-inline: auto;
 }
 .submit-btn:hover {
-	background-color: #0056b3;
+	color: #fff;
+	opacity: 0.65;
+	transition: all 0.5s ease-in-out;
 }
 .rating {
 	display: flex;
@@ -10598,5 +10624,9 @@ textarea {
 }
 .privacy-policy {
 	margin-top: 15px;
-	font-size: 0.9em;
+	font-size: 14px;
+}
+
+.pravacypolicy_link {
+	text-decoration: underline;
 }
