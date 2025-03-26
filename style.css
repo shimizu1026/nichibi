@@ -10199,11 +10199,27 @@ figcaption {
 }
 
 
-/* .peacefactory_wrapper h2 {
- width: 100%;
- text-align: center;
- margin: 0;
-} */
+.logo {
+	filter: blur(10px);
+	opacity: 0;
+	transform: scale(1.1);
+	transition: filter 2s, opacity 2s,transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.blur {
+	font-size: 24px;
+	color: #333;
+	filter: blur(10px);
+	transform: scale(1.1);
+	opacity: 0;
+	transition: filter 2s, opacity 2s,transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal {
+	filter: blur(0);
+	transform: scale(1);
+	opacity: 1;
+}
 
 .container_1080 {
  text-align: center;
@@ -10233,10 +10249,57 @@ figcaption {
  padding: 0 40px;
 }
 
+
+.text-reveal {
+	position: relative;
+}
+
+.text-reveal .text-clip {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+
+.text-reveal .text-char {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(40%);
+}
+
+.text-reveal.animate-reveal .text-char {
+	animation: revealChar cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes revealChar {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+/* 下線スタイル */
+.text-reveal::after {
+	content: '';
+	position: absolute;
+	bottom: -17px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 58px;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	opacity: 0; /* 初期状態で非表示 */
+	transition: opacity 0.5s ease;
+}
+.text-reveal.animate-reveal::after {
+	opacity: 1; /* アニメーション時に表示 */
+}
+
 .peacefactory__text02 {
  font-size: 28px;
  text-align: center;
  width: 100%;
+ margin: 0
 }
 
 .peacefactory02 {
@@ -10247,13 +10310,10 @@ figcaption {
 }
 
 
+
 .peacefactory02 p {
  font-size: 16px;
 
-}
-
-.peacefactory__text02 {
- margin: 0;
 }
 
 .peacefactory02 .inner {
@@ -10378,7 +10438,6 @@ figcaption {
  }
 }
 
-
 .button {
  width: 100%;
  background-color: #fff;
@@ -10429,20 +10488,18 @@ figcaption {
  height: 25px;
 }
 
+
 .PF03_container {
  margin: 0 auto;
  display: flex;
  flex-wrap: wrap;
  max-width: 950px;
-
 }
 
 .PF03_box {
  max-width: 256px;
 
 }
-
-
 
 .LP_btn {
  color: #fff;
@@ -10467,6 +10524,10 @@ figcaption {
  /* 縦方向のスクロールを有効化 */
  padding-right: 3px;
  /* スクロールバー用の余白 */
+}
+
+.voice_content ul {
+	padding-left: 0;
 }
 
 .voice_content ul li {
@@ -10543,7 +10604,18 @@ figcaption {
 .contact_form p {
 	font-size: 16px;	
 }
-.mw_wp_form {
+.contact_form {
+	padding: 60px;
+    border-radius: 25px;
+	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
+	margin-top: 30px;
+}
+@media (max-width: 768px) {
+	.contact_form {
+		padding: 25px 15px;
+	}
+}
+/* .mw_wp_form {
 	padding: 60px;
     border-radius: 25px;
 	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
@@ -10553,7 +10625,7 @@ figcaption {
 	.mw_wp_form {
 		padding: 25px 15px;
 	}
-}
+} */
 
 .form_inner {
 	display: grid;
@@ -10591,13 +10663,30 @@ input[type="text"],
 	border-radius: 4px;
 	margin-top: 4px;
 }
-textarea{
+@media (max-width: 768px) {
+	input[type="text"], 
+	input[type="email"], 
+	input[type="tel"], 
+	input[type="file"],
+	select {
 	width: 100%;
 }
-textarea {
-	height: 150px;
-	resize: vertical;
 }
+@media (max-width: 768px) {
+	input[type="file"] {
+	white-space: pre-wrap;
+}
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+    padding: 10px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
 .submit-btn {
 	width: 35%;
 	background-color: #333;
@@ -10607,6 +10696,12 @@ textarea {
 	cursor: pointer;
 	font-size: 16px;
 	margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+	.submit-btn {
+		width: 100%;
+	}
 }
 .submit-btn:hover {
 	color: #fff;

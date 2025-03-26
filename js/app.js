@@ -169,3 +169,180 @@ document.addEventListener('DOMContentLoaded', function() {
 	  }
 	});
   });
+
+// peacefactoryページ冒頭のテキスト
+ // ページ読み込み後に要素を徐々に鮮明にする
+ window.addEventListener('load', () => {
+	const logo = document.getElementById('logo');
+	const blurText = document.querySelector('.blur');
+
+	// ●秒後にロゴを鮮明に
+	setTimeout(() => {
+		logo.classList.add('reveal');
+	}, 500);
+
+	// ●秒後にテキストを鮮明に
+	setTimeout(() => {
+		blurText.classList.add('reveal');
+	}, 1500);
+});
+
+function revealTextWithClip(elementId) {
+	const container = document.getElementById(elementId);
+	const clipArea = container.querySelector('.text-clip');
+	const text = "クリップされた領域から文字が出てくるアニメーション";
+	
+	// 文字を追加
+	text.split('').forEach((char, index) => {
+		const charSpan = document.createElement('span');
+		charSpan.textContent = char;
+		charSpan.classList.add('text-char');
+		
+		// 遅延にイージング効果を追加
+		const delay = Math.pow(index / text.length, 2) * 2;
+		charSpan.style.animationDelay = `${delay}s`;
+		charSpan.style.animationDuration = '0.8s';
+		
+		clipArea.appendChild(charSpan);
+	});
+
+	// アニメーション開始のトリガー
+	setTimeout(() => {
+		container.classList.add('animate-reveal');
+	}, 300);
+}
+
+// ページ読み込み時に実行
+document.addEventListener('DOMContentLoaded', () => {
+	revealTextWithClip('textReveal');
+});
+
+function revealTextWithClip(element, text) {
+	const clipArea = element.querySelector('.text-clip');
+	clipArea.innerHTML = ''; // 既存の内容をクリア
+	
+	// 文字を追加
+	text.split('').forEach((char, index) => {
+		const charSpan = document.createElement('span');
+		charSpan.textContent = char;
+		charSpan.classList.add('text-char');
+		
+		// 遅延にイージング効果を追加
+		const delay = Math.pow(index / text.length, 2) * 2;
+		charSpan.style.animationDelay = `${delay}s`;
+		charSpan.style.animationDuration = '0.8s';
+		
+		clipArea.appendChild(charSpan);
+	});
+}
+
+// ページ読み込み時に実行
+document.addEventListener('DOMContentLoaded', () => {
+	const revealElements = document.querySelectorAll('.text-reveal');
+
+	// Intersection Observerを使用して、要素が画面に入ったら
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting && !entry.target.classList.contains('animate-reveal')) {
+				const clipArea = entry.target.querySelector('.text-clip');
+				const text = clipArea.textContent;
+				
+				// テキストをスパンに分解
+				clipArea.innerHTML = '';
+				text.split('').forEach((char, index) => {
+					const charSpan = document.createElement('span');
+					charSpan.textContent = char;
+					charSpan.classList.add('text-char');
+					
+					// 遅延にイージング効果を追加
+					const delay = Math.pow(index / text.length, 2) * 2;
+					charSpan.style.animationDelay = `${delay}s`;
+					charSpan.style.animationDuration = '0.4s';
+					
+					clipArea.appendChild(charSpan);
+				});
+				
+				// アニメーション開始のトリガー
+				setTimeout(() => {
+					entry.target.classList.add('animate-reveal');
+				}, 300);
+
+				// 一度実行したら監視を解除
+				observer.unobserve(entry.target);
+			}
+		});
+	}, {
+		threshold: 0.1 // 10%が表示されたら発火
+	});
+
+	// 全ての.text-reveal要素を監視
+	revealElements.forEach(el => observer.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+	gsap.registerPlugin(ScrollTrigger)
+// ふわふわアニメーションの設定
+document.querySelectorAll('.float-up').forEach(item => {
+	gsap.fromTo(item, 
+		{
+			opacity: 0,
+			y: 30  // 初期位置を50px下に
+		},
+		{
+			opacity: 1,
+			y: 0,  // 元の位置に戻す
+			duration: 1,
+			ease: 'power2.out',
+			scrollTrigger: {
+				trigger: item,
+				start: 'top 80%',  // 要素の上部が画面の80%の位置に来たら
+				toggleActions: 'play none none reverse'
+			}
+		}
+	);
+});
+
+document.querySelectorAll('.slide-in-left');
+// 左側の要素のアニメーション
+gsap.utils.toArray('.left-item').forEach(item => {
+	gsap.fromTo(item, 
+		{
+			opacity: 0,
+			x: -100  // 左から100px外側から開始
+		},
+		{
+			opacity: 1,
+			x: 0,  // 中央に移動
+			duration: 1,
+			ease: 'power2.out',
+			scrollTrigger: {
+				trigger: item,
+				start: 'top 80%',  // 要素の上部が画面の80%の位置に来たら
+				toggleActions: 'play none none reverse'
+			}
+		}
+	);
+});
+ // 右側の要素のアニメーション
+ gsap.utils.toArray('.right-item').forEach(item => {
+	gsap.fromTo(item, 
+		{
+			opacity: 0,
+			x: 100  // 右から100px外側から開始
+		},
+		{
+			opacity: 1,
+			x: 0,  // 中央に移動
+			duration: 1,
+			ease: 'power2.out',
+			scrollTrigger: {
+				trigger: item,
+				start: 'top 80%',  // 要素の上部が画面の80%の位置に来たら
+				toggleActions: 'play none none reverse'
+			}
+		}
+	);
+});
+   });
+  
+

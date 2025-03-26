@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>複数見出しアニメーション</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .text-reveal {
+            position: relative;
+            overflow: hidden;
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .text-reveal::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 58px;
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .text-reveal.animate-reveal::after {
+            opacity: 1;
+        }
+
+        .text-reveal .text-clip {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .text-reveal .text-char {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        .text-reveal.animate-reveal .text-char {
+            animation: revealChar cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+
+        @keyframes revealChar {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+		@keyframes float-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-up-element {
+  animation: float-up 1s ease-out forwards;
+}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h3 class="text-reveal">
+            <div class="text-clip">寄付システムのご案内</div>
+        </h3>
+        <p>PeaceFactoryは、（株）日美が展開する新しい事業で、購入を通じた社会貢献を目的とした取り組みです。</p>
+    </div>
+
+    <div class="section">
+        <h3 class="text-reveal">
+            <div class="text-clip">社会貢献の新しいカタチ</div>
+        </h3>
+        <p>このシステムは、商品を購入した人が様々な社会貢献団体に寄付ができる新しい価値を提案します。</p>
+    </div>
+
+    <div class="section">
+        <h3 class="text-reveal">
+            <div class="text-clip">私たちのミッション</div>
+        </h3>
+        <p>購入を通じて、社会に貢献する新しい方法を提供します。</p>
+    </div>
+	<div class="float-up-element">
+		ふわっと上がるコンテンツ
+	  </div>
+    <script>
+        // ページ読み込み時に実行
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.text-reveal');
+
+            // Intersection Observerを使用して、要素が画面に入ったら
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('animate-reveal')) {
+                        const clipArea = entry.target.querySelector('.text-clip');
+                        const text = clipArea.textContent;
+                        
+                        // テキストをスパンに分解
+                        clipArea.innerHTML = '';
+                        text.split('').forEach((char, index) => {
+                            const charSpan = document.createElement('span');
+                            charSpan.textContent = char;
+                            charSpan.classList.add('text-char');
+                            
+                            // 遅延にイージング効果を追加
+                            const delay = Math.pow(index / text.length, 2) * 2;
+                            charSpan.style.animationDelay = `${delay}s`;
+                            charSpan.style.animationDuration = '0.8s';
+                            
+                            clipArea.appendChild(charSpan);
+                        });
+                        
+                        // アニメーション開始のトリガー
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-reveal');
+                        }, 300);
+
+                        // 一度実行したら監視を解除
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1 // 10%が表示されたら発火
+            });
+
+            // 全ての.text-reveal要素を監視
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

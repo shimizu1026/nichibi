@@ -12,6 +12,7 @@
  <meta property="og:title" content="" />
  <meta property="og:type" content="website" />
  <meta property="og:description" content="">
+
  <!-- <meta property="og:image" content="./img/favicons/screenshot_ogp.png" />
 <meta property="og:site_name" content="" />
 <meta property="og:url" content="./" />
@@ -40,6 +41,7 @@
  <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" onload="this.rel='stylesheet'">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
  <style>
   .product-section {
    /* display: flex;
@@ -166,9 +168,8 @@
   <div class="peacefactory_wrapper">
    <section class="peacefactory01">
     <div class="inner">
-     <h2 class=""><img src="img/peacefactory/PF_logo.png" alt="peace factoryのロゴ" width="480" height="66" decoding="async" loading="lazy"></h2>
-     <div class="container_top">
-
+     <h2><img src="img/peacefactory/PF_logo.png" alt="peace factoryのロゴ" width="480" height="66" decoding="async" loading="lazy" class="logo" id="logo"></h2>
+     <div class="container_top blur">
       <h3 class="peacefactory__text01"><span class="PF_title"></span>誰かの未来に<span class="PF_title">ピースをつくろう</span> </h3>
       <p>
        私たちは当たり前のように「平和」の内側で生きてきました。<br>
@@ -184,12 +185,11 @@
    </section>
    <section class="peacefactory02">
     <div class="inner">
-     <img src="img/peacefactory/PF_Catchphrase_img.png" alt="" width="368" height="477" decoding="async" loading="lazy">
+     <img src="img/peacefactory/PF_Catchphrase_img.png" alt="" width="368" height="477" decoding="async" loading="lazy" class="left-item">
 
-     <div class="PF02_inner">
+     <div class="PF02_inner right-item">
       <div class="text_content">
-
-       <h3 class="peacefactory__text02">PeaceFactoryとは</h3>
+       <h3 class="peacefactory__text02 text-reveal"><span class="text-clip">PeaceFactoryとは</span></h3>
        <p>
         私たちは「誰かの未来にピースをつくろう」のコンセプトのもと、<br class="pc">
         デザインを通じて、日常の中で平和への意識を深め、<br>
@@ -230,27 +230,27 @@
    </section>
    <section class="peacefactory03">
     <div class="inner">
-     <h3 class="peacefactory__text03"><span class="PF_title">寄付システムの</span><span class="PF_title">ご案内</span>
+     <h3 class="peacefactory__text03 text-reveal"><span class="text-clip">寄付システムのご案内</span>
      </h3>
-     <p class="PF03_text">
+     <p class="PF03_text float-up">
       PeaceFactoryは、（株）日美が展開する新しい事業で、購入を通じた社会貢献を目的とした取り組みです。<br>
       この事業の中核をなすのが、独自開発の Peace Factory Share Donation System です。<br>
       このシステムは、商品を購入した人が様々な社会貢献団体に寄付ができる新しい価値を提案します。
      </p>
 
     </div>
-    <div class="PF03_container">
-     <div class="PF03_box">
+    <div class="PF03_container float-up">
+     <div class="PF03_box float-up">
       <p>①商品購入後<br>
        タグのQRを読み込む</p>
       <img src="img/peacefactory/PF_03_1.png" alt="" width="255" height="502" decoding="async" loading="lazy">
      </div>
-     <div class="PF03_box">
+     <div class="PF03_box float-up">
       <p>②寄付先カテゴリーから<br>
        寄付したい団体を選択</p>
       <img src="img/peacefactory/PF_03_2.png" alt="" width="256" height="512" decoding="async" loading="lazy">
      </div>
-     <div class="PF03_box">
+     <div class="PF03_box float-up">
       <p>③寄付完了</p>
       <img src="img/peacefactory/PF_03_3.png" alt="" width="256" height="512" decoding="async" loading="lazy">
      </div>
@@ -261,22 +261,22 @@
        商品一覧
       </a>
      </div>
-     <div class="PF03_2_btn">
+     <!-- <div class="PF03_2_btn">
       <a class="LP_btn" href="https://www.peace-factory.net/" target="_blank">
        PeaceFactoryのホームページへ
       </a>
-     </div>
+     </div> -->
     </div>
    </section>
 
    <section class="peacefactory04">
     <div class="inner">
-     <h3 class="peacefactory__text03"><span class="PF_title">PeaceFactoryの</span><span class="PF_title">活動</span></h3>
+     <h3 class="peacefactory__text03 text-reveal"><span class="text-clip">PeaceFactoryの活動</span></h3>
 
      <div class="PF04_event_list">
 
       <a href="">
-       <article class="article">
+       <article class="article float-up">
         <div class="article_img">
          <img src="img/peacefactory/article_img_01.png">
         </div>
@@ -289,7 +289,7 @@
        </article>
       </a>
       <a href="">
-       <article class="article">
+       <article class="article float-up">
         <div class="article_img">
          <img src="img/peacefactory/article_img_01.png">
         </div>
@@ -302,7 +302,7 @@
        </article>
       </a>
       <a href="">
-       <article class="article">
+       <article class="article float-up">
         <div class="article_img">
          <img src="img/peacefactory/article_img_01.png">
         </div>
@@ -314,7 +314,7 @@
         </div>
        </article>
       </a>
-      <div class="PF03_btn">
+      <div class="PF03_btn float-up">
        <a href="">
         もっと見る
        </a>
@@ -327,9 +327,9 @@
 
    <section class="peacefactory05">
     <div class="inner">
-     <h3 class="peacefactory__text03">お客さまの声</h3>
+     <h3 class="peacefactory__text03 text-reveal"><span class="text-clip">お客さまの声</span></h3>
      <div class="PF05_info_inner">
-      <div class="voice_content">
+      <div class="voice_content float-up">
        <ul>
         <li><a href=""><time datetime="2025-03-19">2025/03/19</time>＃＃のご意見を改善しました</a></li>
         <li><a href=""><time datetime="2025-03-19">2025/03/19</time>＃＃のご意見を改善しました</a></li>
@@ -338,7 +338,7 @@
        </ul>
       </div>
 
-	  <div class="contact_form">
+	  <div class="contact_form float-up">
 		<h4>お問い合わせフォーム</h4>
 		<p>項目をご記入のうえ、お問い合わせください。<br>
 				担当者よりご連絡いたします。</p>
@@ -460,6 +460,10 @@
  <script src="./js/libs/jquery.min.js"></script>
  <script src="./js/libs/bootstrap.min.js"></script>
  <script src="./js/libs/slick.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
  <script src="./js/app.js"></script>
  <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -507,6 +511,7 @@
    });
   });
  </script>
+
 </body>
 
 </html>
