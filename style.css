@@ -10603,7 +10603,7 @@ figcaption {
 .contact_form p {
 	font-size: 16px;	
 }
-.contact_form {
+/* .contact_form {
 	padding: 60px;
     border-radius: 25px;
 	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
@@ -10613,18 +10613,17 @@ figcaption {
 	.contact_form {
 		padding: 25px 15px;
 	}
-}
-/* .mw_wp_form {
+} */
+.mw_wp_form {
 	padding: 60px;
     border-radius: 25px;
 	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
-	margin-top: 30px;
 }
 @media (max-width: 768px) {
 	.mw_wp_form {
 		padding: 25px 15px;
 	}
-} */
+}
 
 .form_inner {
 	display: grid;
