@@ -10200,25 +10200,25 @@ figcaption {
 
 
 .logo {
-	filter: blur(10px);
-	opacity: 0;
-	transform: scale(1.1);
-	transition: filter 2s, opacity 2s,transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+ filter: blur(10px);
+ opacity: 0;
+ transform: scale(1.1);
+ transition: filter 2s, opacity 2s, transform 2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .blur {
-	font-size: 24px;
-	color: #333;
-	filter: blur(10px);
-	transform: scale(1.1);
-	opacity: 0;
-	transition: filter 2s, opacity 2s,transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+ font-size: 24px;
+ color: #333;
+ filter: blur(10px);
+ transform: scale(1.1);
+ opacity: 0;
+ transition: filter 2s, opacity 2s, transform 2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .reveal {
-	filter: blur(0);
-	transform: scale(1);
-	opacity: 1;
+ filter: blur(0);
+ transform: scale(1);
+ opacity: 1;
 }
 
 .container_1080 {
@@ -10227,11 +10227,12 @@ figcaption {
 }
 
 .peacefactory01 {
-	text-align: center;
+ text-align: center;
 }
+
 .peacefactory01 h2 {
-	margin-top: 0;
-	margin-bottom: 100px;
+ margin-top: 0;
+ margin-bottom: 100px;
 }
 
 .peacefactory__text01 {
@@ -10251,48 +10252,52 @@ figcaption {
 
 
 .text-reveal {
-	position: relative;
+ position: relative;
 }
 
 .text-reveal .text-clip {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	overflow: hidden;
+ position: relative;
+ width: 100%;
+ height: 50px;
+ overflow: hidden;
 }
 
 .text-reveal .text-char {
-	display: inline-block;
-	opacity: 0;
-	transform: translateY(40%);
+ display: inline-block;
+ opacity: 0;
+ transform: translateY(40%);
 }
 
 .text-reveal.animate-reveal .text-char {
-	animation: revealChar cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+ animation: revealChar cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes revealChar {
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+ to {
+  opacity: 1;
+  transform: translateY(0);
+ }
 }
+
 /* 下線スタイル */
 .text-reveal::after {
-	content: '';
-	position: absolute;
-	bottom: -17px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 58px;
-	height: 4px;
-	background-color: black;
-	border-radius: 2px;
-	opacity: 0; /* 初期状態で非表示 */
-	transition: opacity 0.5s ease;
+ content: '';
+ position: absolute;
+ bottom: -17px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 58px;
+ height: 4px;
+ background-color: black;
+ border-radius: 2px;
+ opacity: 0;
+ /* 初期状態で非表示 */
+ transition: opacity 0.5s ease;
 }
+
 .text-reveal.animate-reveal::after {
-	opacity: 1; /* アニメーション時に表示 */
+ opacity: 1;
+ /* アニメーション時に表示 */
 }
 
 .peacefactory__text02 {
@@ -10383,20 +10388,20 @@ figcaption {
 }
 
 @media (max-width: 768px) {
-	.mt40 {
-		margin-top: 0;
-	   }
-	}
+ .mt40 {
+  margin-top: 0;
+ }
+}
 
 .mt60 {
  margin-top: 60px;
 }
 
 @media (max-width: 768px) {
-	.mt60 {
-		margin-top: 0;
-	   }
-	}
+ .mt60 {
+  margin-top: 0;
+ }
+}
 
 .bold {
  font-weight: 600;
@@ -10409,10 +10414,10 @@ figcaption {
 }
 
 @media (max-width: 768px) {
-	.messege {
-		margin-top: 0;
-	   }
-	}
+ .messege {
+  margin-top: 0;
+ }
+}
 
 .peacefactory__text02 {
  margin-bottom: 20px;
@@ -10526,7 +10531,7 @@ figcaption {
 }
 
 .voice_content ul {
-	padding-left: 0;
+ padding-left: 0;
 }
 
 .voice_content ul li {
@@ -10594,15 +10599,18 @@ figcaption {
 
 /* フォーム */
 .contact_form {
-	margin-top: 80px;	
+ margin-top: 80px;
 }
+
 .contact_form h4 {
-	font-size: 20px;
-	text-align: center;	
+ font-size: 20px;
+ text-align: center;
 }
+
 .contact_form p {
-	font-size: 16px;	
+ font-size: 16px;
 }
+
 /* .contact_form {
 	padding: 60px;
     border-radius: 25px;
@@ -10615,111 +10623,123 @@ figcaption {
 	}
 } */
 .mw_wp_form {
-	padding: 60px;
-    border-radius: 25px;
-	box-shadow: 0 2px 40px rgba(0,0,0,0.1);
+ padding: 60px;
+ border-radius: 25px;
+ box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 768px) {
-	.mw_wp_form {
-		padding: 25px 15px;
-	}
+ .mw_wp_form {
+  padding: 25px 15px;
+ }
 }
 
 .form_inner {
-	display: grid;
-	gap: 30px;
-	font-size: 16px;
+ display: grid;
+ gap: 30px;
+ font-size: 16px;
 }
 
 .form_note {
-	color: red;
-	margin-bottom: 15px;
+ color: red;
+ margin-bottom: 15px;
 }
+
 .form_inner .form_group {
-    display: flex;
-    flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
+
 .form_inner .required::after {
-    content: '＊';
-    color: red;
-    margin-left: 4px;
-    vertical-align: super;
-    font-size: 0.7em;
+ content: '＊';
+ color: red;
+ margin-left: 4px;
+ vertical-align: super;
+ font-size: 0.7em;
 }
+
 .form_inner label:last-of-type {
-    display: block;
+ display: block;
 }
-input[type="text"], 
-        input[type="email"], 
-        input[type="tel"], 
-        input[type="file"],
-        select {
-	width: 40%;
-	height: 100%;
-	padding: 10px;
-	border: 1px solid #CDCDCD;
-	border-radius: 4px;
-	margin-top: 4px;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select {
+ width: 40%;
+ height: 100%;
+ padding: 10px;
+ border: 1px solid #CDCDCD;
+ border-radius: 4px;
+ margin-top: 4px;
 }
+
 @media (max-width: 768px) {
-	input[type="text"], 
-	input[type="email"], 
-	input[type="tel"], 
-	input[type="file"],
-	select {
-	width: 100%;
+
+ input[type="text"],
+ input[type="email"],
+ input[type="tel"],
+ input[type="file"],
+ select {
+  width: 100%;
+ }
 }
-}
+
 @media (max-width: 768px) {
-	input[type="file"] {
-	white-space: pre-wrap;
-}
+ input[type="file"] {
+  white-space: pre-wrap;
+ }
 }
 
 textarea {
-	width: 100%;
-	height: 150px;
-    padding: 10px;
-    border: 1px solid #CDCDCD;
-    border-radius: 4px;
-    margin-top: 4px;
+ width: 100%;
+ height: 150px;
+ padding: 10px;
+ border: 1px solid #CDCDCD;
+ border-radius: 4px;
+ margin-top: 4px;
 }
 
 .submit-btn {
-	width: 35%;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	padding: 15px 30px;
-	cursor: pointer;
-	font-size: 16px;
-	margin-inline: auto;
+ width: 35%;
+ background-color: #333;
+ color: #fff;
+ border: none;
+ padding: 15px 30px;
+ cursor: pointer;
+ font-size: 16px;
+ margin-inline: auto;
 }
 
 @media (max-width: 768px) {
-	.submit-btn {
-		width: 100%;
-	}
+ .submit-btn {
+  width: 100%;
+ }
 }
+
 .submit-btn:hover {
-	color: #fff;
-	opacity: 0.65;
-	transition: all 0.5s ease-in-out;
+ color: #fff;
+ opacity: 0.65;
+ transition: all 0.5s ease-in-out;
 }
+
 .rating {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
 }
+
 .rating label {
-	display: inline-block;
-	margin-right: 10px;
+ display: inline-block;
+ margin-right: 10px;
 }
+
 .privacy-policy {
-	margin-top: 15px;
-	font-size: 14px;
+ margin-top: 15px;
+ font-size: 14px;
 }
 
 .pravacypolicy_link {
-	text-decoration: underline;
+ text-decoration: underline;
 }
