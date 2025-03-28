@@ -283,7 +283,10 @@
  text-align: center;
 }
 
-/* .form_inner {
- justify-content: center;
- border: solid;
-} */
+.contact_form {
+ padding-top: 50px;
+}
+
+.contact_form p {
+ text-align: center;
+}
