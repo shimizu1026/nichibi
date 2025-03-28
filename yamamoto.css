@@ -187,35 +187,36 @@
 }
 
 .PF03_btn a::after {
-	content: "";
-	background-image: url(img/peacefactory/arrow.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	justify-self: end;
-	width: 17px;
-	height: 7px
+ content: "";
+ background-image: url(img/peacefactory/arrow.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ justify-self: end;
+ width: 17px;
+ height: 7px
 }
 
 .PF03_btn a,
 .PF03_2_btn a {
-	padding: 15px 30px;
+ padding: 15px 30px;
 }
 
 /* リンクボタンpiecefactry */
 .PF03_2_btn a {
  display: grid;
-	grid-template-columns: 1fr auto;
-	place-items: center;
-	background-color: #231815;
-	font-size: 16px;
-	width: 100%;
+ grid-template-columns: 1fr auto;
+ place-items: center;
+ background-color: #231815;
+ font-size: 16px;
+ width: 100%;
 }
 
 @media (max-width: 500px) {
-	.PF03_btn a,
-	.PF03_2_btn a {
-		font-size: 14px;
-	   }
+
+ .PF03_btn a,
+ .PF03_2_btn a {
+  font-size: 14px;
+ }
 }
 
 .PF03_2_btn a::after {
@@ -269,3 +270,23 @@
  }
 }
 
+/* 250328追記 */
+.container_top p {
+ font-family: 'Shippori Mincho', "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ font-size: 16px;
+ line-height: 50px;
+}
+
+.peacefactory__text03_02 {
+ margin-top: 100px;
+ font-size: 20px;
+ text-align: center;
+}
+
+.contact_form {
+ padding-top: 50px;
+}
+
+.contact_form p {
+ text-align: center;
+}
