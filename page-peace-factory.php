@@ -210,7 +210,8 @@
      </div>
 
      <div class="contact_form">
-      <h4>お問い合わせフォーム</h4>
+      <h3 class="peacefactory__text03 text-reveal"><span class="text-clip">お問い合わせフォーム</span>
+      </h3>
       <p class="float-up">項目をご記入のうえ、お問い合わせください。<br>
        担当者よりご連絡いたします。</p>
       <p class="form_note float-up">＊は必須の項目です</p>
